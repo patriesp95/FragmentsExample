@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <fragment android:name="com.example.fragmentsexample.RedFragment"
         android:id="@+id/first"
         android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent" />
     <fragment android:name="com.example.fragmentsexample.BlueFragment"
         android:id="@+id/second"
         android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent" />
 
 </LinearLayout>
