@@ -8,6 +8,7 @@
     android:background="@color/red">
 
     <Button
+        android:id="@+id/btnPlus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/blue"
