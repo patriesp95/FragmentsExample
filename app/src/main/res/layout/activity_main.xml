@@ -3,18 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment android:name="com.example.fragmentsexample.RedFragment"
-        android:id="@+id/first"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent" />
-    <fragment android:name="com.example.fragmentsexample.BlueFragment"
-        android:id="@+id/second"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        android:background="@color/red"
+        android:text="Fragment rojo" />
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:background="@color/blue"
+        android:text="Fragment azul" />
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
 </LinearLayout>
