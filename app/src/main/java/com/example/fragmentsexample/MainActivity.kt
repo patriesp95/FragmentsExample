@@ -14,17 +14,18 @@ class MainActivity : AppCompatActivity(),OnFragmentActionsListener{
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBlue.setOnClickListener{loadFragment(BlueFragment())}
-        binding.btnRed.setOnClickListener{loadFragment(RedFragment())}
+        binding.btnBlue.setOnClickListener{replaceFragment(BlueFragment())}
+        binding.btnRed.setOnClickListener{replaceFragment(RedFragment())}
     }
 
     override fun onClickFragmentButton() {
         Toast.makeText(this, "El botón ha sido pulsado", Toast.LENGTH_SHORT).show()
     }
 
-    private fun loadFragment(fragment: Fragment){
+    private fun replaceFragment(fragment: Fragment){
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.add(R.id.fragmentContainer, fragment)
+        fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+        fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }
 }
