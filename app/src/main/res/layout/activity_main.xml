@@ -6,27 +6,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnRed"
+    <TextView
+        android:text="hello world!"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:padding="8dp"
-        android:layout_margin="5dp"
-        android:background="@color/red"
-        android:text="Fragment rojo" />
-    <Button
-        android:id="@+id/btnBlue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="5dp"
-        android:background="@color/blue"
-        android:text="Fragment azul" />
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
